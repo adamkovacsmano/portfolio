@@ -1,8 +1,3 @@
-// var h1 = document.querySelector("h1");
-
-// h1.addEventListener("input", function() {
-//   this.setAttribute("data-heading", this.innerText);
-// });
 var canvas = document.querySelector("canvas");
 
 let dpi = window.devicePixelRatio;
@@ -29,56 +24,6 @@ function fix_dpi() {
 }
 
 fix_dpi();
-// c.fillStyle = "rgba(255, 0, 0, 0.5)";
-// c.fillRect(100, 100, 100, 100);
-// c.fillRect(100, 200, 100, 100)
-// c.fillStyle = "rgba(0, 0, 255, 0.5)";
-// c.fillRect(400, 100, 100, 100);
-// c.fillStyle = "rgba(0, 255, 0, 0.5)";
-// c.fillRect(300, 300, 100, 100);
-
-// //line
-
-// c.beginPath();
-// c.moveTo(50, 300);
-// c.lineTo(300, 100);
-// c.lineTo(400, 300);
-// c.lineTo(50, 300);
-// c.strokeStyle = "#fa34a3";
-// c.stroke();
-
-// //Arc
-// c.beginPath();
-// c.arc(300, 300, 30, 0, Math.PI * 2, false);
-// c.strokeStyle = "blue";
-// c.stroke();
-
-// //Multiple Arcs
-
-// let arcLimit = 10;
-
-// for (let i = 0; i < arcLimit; i++) {
-//   var x = Math.random() * window.innerWidth;
-//   var y = Math.random() * window.innerHeight;
-//   c.beginPath();
-//   c.arc(x, y, 30, 0, Math.PI * 2, false);
-//   c.strokeStyle = getRandomColor();
-//   c.stroke();
-// }
-
-// function getRandomColor(){
-//   var r = Math.floor(Math.random() * 255);
-//   var g = Math.floor(Math.random() * 255);
-//   var b = Math.floor(Math.random() * 255);
-//   return "rgb("+r+","+g+","+b+")";
-// }
-
-// Moving circle
-// var x = Math.random() * innerWidth;
-// var y = Math.random() * innerHeight;
-// var dx = (Math.random() - 0.5) * 3; //clever
-// var dy = (Math.random() - 0.5) * 3;
-// var radius = 30;
 
 let mouse = {
   x: undefined,
@@ -86,14 +31,14 @@ let mouse = {
 };
 
 let maxRadius = 40;
-// let minimumRadius = 2;
+// let minimumRadius = 20;
 
-let colorArray = ["#C85B6C", "#FE7568", "#FCCA6C", "#548FCC", "#315B8A"];
+let colorArray = ["#605A8C", "#7C76A6", "#485059", "#79838C", "#B4BBBF"];
 
 window.addEventListener("mousemove", function(event) {
   mouse.x = event.x;
   mouse.y = event.y;
-  // console.log(mouse);
+  console.log(mouse);
 });
 
 window.addEventListener("resize", function() {

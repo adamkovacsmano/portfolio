@@ -30,7 +30,7 @@ let mouse = {
 
 let maxRadius = 40;
 
-let colorArray = ["#605A8C", "#7C76A6", "#485059", "#79838C", "#B4BBBF"];
+let colorArray = ["#C85B6C", "#FE7568", "#FCCA6C", "#548FCC", "#315B8A"];
 
 window.addEventListener("mousemove", function(event) {
   mouse.x = event.x;

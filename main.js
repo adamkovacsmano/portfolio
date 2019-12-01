@@ -1,3 +1,21 @@
+const bgChanger = () => {
+  if (this.scrollY > this.innerHeight / 2) {
+    firstSection.classList.add("bg-active");
+  } else {
+    firstSection.classList.remove("bg-active");
+  }
+
+  if (this.scrollY > this.innerHeight / 1.3) {
+    secondSection.classList.add("bg-active-second");
+  } else {
+    secondSection.classList.remove("bg-active-second");
+  }
+};
+
+let firstSection = document.getElementById("first-section");
+let secondSection = document.getElementById("second-section");
+window.addEventListener("scroll", bgChanger);
+
 const canvas = document.querySelector("canvas");
 
 canvas.width = window.innerWidth;

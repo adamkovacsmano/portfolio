@@ -43,6 +43,7 @@ h1:before {
   z-index: 5;
 }
 h1:before {
+  color: #65f283;
   text-shadow: -1px -1px 0 #9e132c, 1px -1px 0 #9e132c, -1px 1px 0 #9e132c,
     1px 1px 0 #9e132c, 1px 0px 0px #f5b10b, 0px 1px 0px #f5b10b,
     2px 1px 0px #f5b10b, 1px 2px 0px #f5b10b, 3px 2px 0px #f5b10b,
@@ -51,7 +52,6 @@ h1:before {
     -1px 2px 0 black, 0 3px 0 #9e132c, 1px 4px 0 #9e132c, 2px 5px 0px #9e132c,
     2px -1px 0 #9e132c, 3px 0 0 #2f3e9c, 4px 1px 0 #9e132c, 5px 2px 0px #9e132c,
     6px 3px 0 #9e132c, 7px 4px 0 #9e132c, 10px 10px 4px rgba(106, 241, 119, 0.8);
-  color: #65f283;
 }
 h1:after {
   color: #4ad9db;
@@ -66,16 +66,19 @@ h1:after {
 }
 
 .first {
-  background-color: #f98ca4;
+  /* background-color: #f98ca4; */
+  transition: all 0.5s ease;
+  background-color: #f4eba0;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 100%;
 }
 
 .second {
-  background-color: #4ad9db;
+  /* background-color: #4ad9db; */
+  transition: all 0.5s ease;
+  background-color: #f4eba0;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
@@ -101,8 +104,6 @@ article {
   border-radius: 40px 10px;
   margin: 30px 10px 30px 10px;
   transition: 1s ease;
-  -webkit-box-shadow: 0px 0px 16px 3px rgba(122, 101, 101, 1);
-  -moz-box-shadow: 0px 0px 16px 3px rgba(122, 101, 101, 1);
   box-shadow: 0px 0px 16px 3px rgba(122, 101, 101, 1);
 }
 
@@ -122,6 +123,7 @@ img {
   width: 400px;
   height: auto;
   border-radius: 40px 10px 0px 0px;
+  object-fit: cover;
 }
 
 div {
@@ -214,20 +216,69 @@ p {
   }
 }
 
-.fa-github-square {
+.fontawe {
+  cursor: pointer;
   font-size: 5rem;
+  box-sizing: unset;
+  box-shadow: 0px 0px 5px 5px rgb(248, 246, 246);
+  padding: 5px;
+  color: white;
+  border-radius: 10px;
+}
+
+.fontawe:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.fa-github-square {
+  background-color: black;
 }
 
 .fa-linkedin {
-  font-size: 5rem;
-  color: #4ad9db;
+  background-color: #4ad9db;
 }
 
 .fa-facebook-square {
-  font-size: 5rem;
-  color: #2f3e9c;
+  background-color: #2f3e9c;
 }
 .fa-envelope-square {
-  font-size: 5rem;
-  color: #f98ca4;
+  background-color: #f98ca4;
+}
+
+.bg-active {
+  background: #f98ca4;
+}
+
+.bg-active-second {
+  background: #4ad9db;
 }

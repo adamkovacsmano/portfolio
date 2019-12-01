@@ -2,6 +2,7 @@ html,
 body {
   padding: 0px;
   margin: 0px;
+  font-family: "CoreCircus", sans-serif;
 }
 
 .heading {
@@ -35,7 +36,6 @@ h1 {
 h1:after,
 h1:before {
   content: attr(data-heading);
-  /* position: absolute; */
   overflow: hidden;
   left: 0;
   width: 100%;
@@ -52,10 +52,8 @@ h1:before {
     2px -1px 0 #9e132c, 3px 0 0 #2f3e9c, 4px 1px 0 #9e132c, 5px 2px 0px #9e132c,
     6px 3px 0 #9e132c, 7px 4px 0 #9e132c, 10px 10px 4px rgba(106, 241, 119, 0.8);
   color: #65f283;
-  /* height: 66%; */
 }
 h1:after {
-  /* height: 33%; */
   color: #4ad9db;
   text-shadow: -1px -1px 0 #2f3e9c, 1px -1px 0 #2f3e9c, -1px 1px 0 #2f3e9c,
     1px 1px 0 #2f3e9c, 1px 0px 0px #f98ca4, 0px 1px 0px #f98ca4,
@@ -85,63 +83,68 @@ h1:after {
   margin: auto;
 }
 
+footer {
+  background-color: #65f283;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 50px;
+}
+
 article {
   display: flex;
   flex-direction: column;
-  height: 600px;
+  width: 400px;
   border: 2px solid #4ad9db;
   border-radius: 40px 10px;
   margin: 30px 10px 30px 10px;
-}
-
-article:hover {
-  cursor: pointer;
-}
-
-img {
-  width: 600px;
-  height: auto;
-  border-radius: 40px 10px 0px 0px;
+  transition: 1s ease;
   -webkit-box-shadow: 0px 0px 16px 3px rgba(122, 101, 101, 1);
   -moz-box-shadow: 0px 0px 16px 3px rgba(122, 101, 101, 1);
   box-shadow: 0px 0px 16px 3px rgba(122, 101, 101, 1);
 }
 
+article:nth-child(even):hover {
+  cursor: pointer;
+  transform: rotateZ(-10deg);
+  box-shadow: 0px 0px 15px 13px rgba(122, 101, 101, 1);
+}
+
+article:nth-child(odd):hover {
+  cursor: pointer;
+  transform: rotateZ(10deg);
+  box-shadow: 0px 0px 15px 13px rgba(122, 101, 101, 1);
+}
+
+img {
+  width: 400px;
+  height: auto;
+  border-radius: 40px 10px 0px 0px;
+}
+
 div {
-  font-family: cursive;
-  font-size: 1.2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 5px;
   text-align: center;
   height: 100%;
   border-radius: 0px 0px 40px 10px;
   background: linear-gradient(10deg, #f4eba0 43%, #c0faca 43%);
-  -webkit-box-shadow: 0px 0px 16px 3px rgba(122, 101, 101, 1);
-  -moz-box-shadow: 0px 0px 16px 3px rgba(122, 101, 101, 1);
-  box-shadow: 0px 0px 16px 3px rgba(122, 101, 101, 1);
 }
 
 h2 {
+  font-size: 1.2rem;
   color: #2f3e9c;
 }
 
-p {
-  color: #9e132c;
+h3 {
+  font-family: cursive;
 }
 
-/*
- * Webfont: CoreCircus by S-Core
- * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/
- * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
- * Licensed pageviews: 10,000
-*
- * Webfont: CoreCircus2DDot1 by S-Core
- * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/
- * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved.
- * Licensed pageviews: 10,000
-*/
+p {
+  font-family: cursive;
+}
+
 @font-face {
   font-family: "CoreCircus2DDot1";
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot");
@@ -179,7 +182,6 @@ p {
       format("truetype");
 }
 
-/*# sourceMappingURL=main.css.map */
 .fa-chevron-down {
   position: absolute;
   bottom: 3%;
@@ -189,6 +191,7 @@ p {
   height: 40px;
   font-size: 3rem;
   color: #2f3e9c;
+  cursor: pointer;
 }
 
 .bounce {
@@ -209,4 +212,22 @@ p {
   60% {
     transform: translateY(-15px);
   }
+}
+
+.fa-github-square {
+  font-size: 5rem;
+}
+
+.fa-linkedin {
+  font-size: 5rem;
+  color: #4ad9db;
+}
+
+.fa-facebook-square {
+  font-size: 5rem;
+  color: #2f3e9c;
+}
+.fa-envelope-square {
+  font-size: 5rem;
+  color: #f98ca4;
 }

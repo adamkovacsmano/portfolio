@@ -5,14 +5,35 @@ body {
   font-family: "CoreCircus", sans-serif;
 }
 
-.heading {
+header {
   overflow: hidden;
   background: linear-gradient(10deg, #f4eba0 43%, #c0faca 43%);
   height: 100vh;
 }
 
+.welcome-line-1 {
+  font-family: "CoreCircus", sans-serif;
+  color: #4ad9db;
+  text-shadow: 1px 1px 1px #2f3e9c, 1px 1px 1px #2f3e9c, 1px 1px 1px #2f3e9c,
+    1px 1px 1px #2f3e9c;
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.welcome-line-2 {
+  font-family: "CoreCircus", sans-serif;
+  color: #2f3e9c;
+  text-shadow: 1px 1px 1px #4ad9db, 1px 1px 1px #4ad9db, 1px 1px 1px #4ad9db,
+    1px 1px 1px #4ad9db;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
 h1 {
-  box-sizing: initial;
   font-family: "CoreCircus", sans-serif;
   text-transform: uppercase;
   font-size: 5rem;
@@ -66,7 +87,6 @@ h1:after {
 }
 
 .first {
-  /* background-color: #f98ca4; */
   transition: all 0.5s ease;
   background-color: #f4eba0;
   display: flex;
@@ -76,9 +96,8 @@ h1:after {
 }
 
 .second {
-  /* background-color: #4ad9db; */
   transition: all 0.5s ease;
-  background-color: #f4eba0;
+  background-color: #f98ca4;
   display: flex;
   align-content: center;
   flex-wrap: wrap;

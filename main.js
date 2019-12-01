@@ -5,7 +5,7 @@ const bgChanger = () => {
     firstSection.classList.remove("bg-active");
   }
 
-  if (this.scrollY > this.innerHeight / 1.3) {
+  if (this.scrollY > this.innerHeight / 1.2) {
     secondSection.classList.add("bg-active-second");
   } else {
     secondSection.classList.remove("bg-active-second");

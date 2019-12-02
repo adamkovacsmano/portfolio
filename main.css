@@ -135,7 +135,7 @@ img {
 }
 
 div {
-  padding: 5px;
+  padding: 25px;
   text-align: center;
   height: 100%;
   border-radius: 0px 0px 40px 10px;
@@ -144,16 +144,23 @@ div {
 }
 
 h2 {
-  font-size: 1.2rem;
+  margin: 0;
+  font-family: "CoreCircus", sans-serif;
+  text-align: center;
   color: #2f3e9c;
+  text-shadow: 1px 1px 1px #4ad9db, 1px 1px 1px #4ad9db, 1px 1px 1px #4ad9db,
+    1px 1px 1px #4ad9db;
+  font-size: 1rem;
 }
 
 h3 {
-  font-family: cursive;
+  font-family: "Play", sans-serif;
+  font-size: 1rem;
 }
 
 div p {
-  font-family: cursive;
+  font-family: "Play", sans-serif;
+  font-style: italic;
 }
 
 a {
@@ -279,12 +286,9 @@ a {
 }
 
 .fa-linkedin {
-  background-color: #4ad9db;
-}
-
-.fa-facebook-square {
   background-color: #2f3e9c;
 }
+
 .fa-envelope-square {
   background-color: #f98ca4;
 }

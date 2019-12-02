@@ -118,13 +118,11 @@ article {
 }
 
 article:nth-child(even):hover {
-  cursor: pointer;
   transform: rotateZ(-10deg);
   box-shadow: 0px 0px 15px 13px rgba(122, 101, 101, 1);
 }
 
 article:nth-child(odd):hover {
-  cursor: pointer;
   transform: rotateZ(10deg);
   box-shadow: 0px 0px 15px 13px rgba(122, 101, 101, 1);
 }
@@ -142,6 +140,7 @@ div {
   height: 100%;
   border-radius: 0px 0px 40px 10px;
   background: linear-gradient(10deg, #f4eba0 43%, #c0faca 43%);
+  cursor: pointer;
 }
 
 h2 {
@@ -155,6 +154,11 @@ h3 {
 
 div p {
   font-family: cursive;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 @font-face {
@@ -231,7 +235,7 @@ div p {
   font-size: 5rem;
   box-sizing: unset;
   box-shadow: 0px 0px 5px 5px rgb(248, 246, 246);
-  padding: 5px;
+  padding: 0 5px;
   color: white;
   border-radius: 10px;
 }
@@ -291,4 +295,52 @@ div p {
 
 .bg-active-second {
   background: #4ad9db;
+}
+
+@media screen and (max-width: 1080px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2;
+    width: 100%;
+  }
+
+  img {
+    width: 350px;
+  }
+  .welcome {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .fontawe {
+    margin: 10px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  img {
+    width: 300px;
+  }
+
+  .welcome {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .fontawe {
+    margin: 10px;
+    font-size: 2rem;
+  }
 }

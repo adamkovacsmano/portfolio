@@ -128,7 +128,7 @@ article:nth-child(odd):hover {
 }
 
 img {
-  width: 400px;
+  width: 100%;
   height: auto;
   border-radius: 40px 10px 0px 0px;
   object-fit: cover;
@@ -308,15 +308,16 @@ a {
 }
 
 @media screen and (max-width: 440px) {
+  article {
+    width: 350px;
+  }
+
   h1 {
     font-size: 2rem;
     line-height: 2;
     width: 100%;
   }
 
-  img {
-    width: 350px;
-  }
   .welcome {
     font-size: 1em;
     width: 100%;
@@ -329,13 +330,13 @@ a {
 }
 
 @media screen and (max-width: 321px) {
+  article {
+    width: 300px;
+  }
+
   h1 {
     font-size: 2rem;
     width: 100%;
-  }
-
-  img {
-    width: 300px;
   }
 
   .welcome {

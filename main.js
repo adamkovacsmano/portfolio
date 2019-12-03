@@ -93,13 +93,24 @@ let circleArray = [];
 function init() {
   circleArray = [];
 
-  for (let index = 0; index < 800; index++) {
-    var radius = Math.random() * 3 + 1;
-    var x = Math.random() * (innerWidth - radius * 2);
-    var y = Math.random() * (innerHeight - radius * 2);
-    var dx = (Math.random() - 0.5) * 3;
-    var dy = (Math.random() - 0.5) * 3;
-    circleArray.push(new Circle(x, y, dx, dy, radius));
+  if (window.innerWidth < 800) {
+    for (let index = 0; index < 200; index++) {
+      var radius = Math.random() * 3 + 1;
+      var x = Math.random() * (innerWidth - radius * 2);
+      var y = Math.random() * (innerHeight - radius * 2);
+      var dx = (Math.random() - 0.5) * 3;
+      var dy = (Math.random() - 0.5) * 3;
+      circleArray.push(new Circle(x, y, dx, dy, radius));
+    }
+  } else {
+    for (let index = 0; index < 600; index++) {
+      var radius = Math.random() * 3 + 1;
+      var x = Math.random() * (innerWidth - radius * 2);
+      var y = Math.random() * (innerHeight - radius * 2);
+      var dx = (Math.random() - 0.5) * 3;
+      var dy = (Math.random() - 0.5) * 3;
+      circleArray.push(new Circle(x, y, dx, dy, radius));
+    }
   }
 }
 

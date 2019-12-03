@@ -1,3 +1,5 @@
+//-------------> BACKGROUNG CHANGE
+
 const bgChanger = () => {
   if (this.scrollY > this.innerHeight / 2) {
     firstSection.classList.add("bg-active");
@@ -15,6 +17,8 @@ const bgChanger = () => {
 let firstSection = document.getElementById("first-section");
 let secondSection = document.getElementById("second-section");
 window.addEventListener("scroll", bgChanger);
+
+//-------------> CANVAS
 
 const canvas = document.querySelector("canvas");
 

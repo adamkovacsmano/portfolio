@@ -13,7 +13,7 @@ header {
 }
 
 .welcome {
-  font-family: "CoreCircus", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   text-align: center;
   color: #2f3e9c;
   text-shadow: 1px 1px 1px #4ad9db, 1px 1px 1px #4ad9db, 1px 1px 1px #4ad9db,
@@ -25,7 +25,7 @@ header {
 }
 
 h1 {
-  font-family: "CoreCircus", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   text-transform: uppercase;
   font-size: 5rem;
   text-align: center;
@@ -145,7 +145,7 @@ div {
 
 h2 {
   margin: 0;
-  font-family: "CoreCircus", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   text-align: center;
   color: #2f3e9c;
   text-shadow: 1px 1px 1px #4ad9db, 1px 1px 1px #4ad9db, 1px 1px 1px #4ad9db,
@@ -154,55 +154,19 @@ h2 {
 }
 
 h3 {
-  font-family: "Play", sans-serif;
+  font-family: "Mukta", sans-serif;
   font-size: 1rem;
 }
 
 div p {
-  font-family: "Play", sans-serif;
+  font-family: "Mukta", sans-serif;
   font-style: italic;
+  font-weight: lighter;
 }
 
 a {
   text-decoration: none;
   color: black;
-}
-
-@font-face {
-  font-family: "CoreCircus2DDot1";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot");
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2")
-      format("woff2"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff")
-      format("woff"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf")
-      format("truetype");
-}
-@font-face {
-  font-family: "CoreCircus";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot");
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2")
-      format("woff2"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff")
-      format("woff"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf")
-      format("truetype");
-}
-@font-face {
-  font-family: "CoreCircusPierrot4";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot");
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff2")
-      format("woff2"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff")
-      format("woff"),
-    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.ttf")
-      format("truetype");
 }
 
 .fa-chevron-down {

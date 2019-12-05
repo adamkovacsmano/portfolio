@@ -177,7 +177,7 @@ img {
   object-fit: cover;
 }
 
-div {
+.article-container {
   padding: 25px;
   text-align: center;
   height: 100%;

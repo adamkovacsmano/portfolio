@@ -23,25 +23,35 @@
   <body>
     <header>
       <h1
+        aria-label="Hi, I'm Adam, a Bristol based junior wev-developer! Welcome to my portfolio. Please tab through my projects!"
+        tabindex="0"
         data-heading-before="Hi I'm Adam"
         data-heading-after="Junior Web Developer"
       >
         a Bristol based
       </h1>
       <section class="welcome">
-        <p>
+        <p tabindex="0">
           Check out some of my works below!
         </p>
       </section>
       <canvas></canvas>
     </header>
     <a href="#nav-projects"><i class="fas fa-chevron-down bounce"></i></a>
-    <main id="nav-projects">
-      <section id="first-section" class="first-section-projects">
+    <main
+      id="nav-projects"
+      aria-label="you can find some of my projects in this section"
+      tabindex="0"
+    >
+      <section
+        id="first-section"
+        class="first-section-projects"
+        aria-label="welcome to the first section of my projects"
+      >
         <a href="https://spellbreaker.adamkovacs.co.uk/" target="_blank">
           <article>
             <img src="./images/spellbreaker.png" alt="" />
-            <div>
+            <div class="article-container">
               <h2>Spellbreaker(demo)</h2>
               <h3>
                 A personal interest project for RPG lovers. Choose a character
@@ -54,7 +64,7 @@
         <a href="https://todo.adamkovacs.co.uk" target="_blank">
           <article>
             <img src="./images/to-do.png" alt="" />
-            <div>
+            <div class="article-container">
               <h2>To-do list</h2>
               <h3>
                 What to do, when life slaps you with a fish? Contribute today!
@@ -68,7 +78,7 @@
         <a href="https://incollaboration.nology.io" target="_blank">
           <article>
             <img src="./images/incollab.png" alt="" />
-            <div>
+            <div class="article-container">
               <h2>In Collaboration</h2>
               <h3>
                 A real-life client project forged in an agile environment with
@@ -82,11 +92,15 @@
           </article>
         </a>
       </section>
-      <section id="second-section" class="second-section-projects">
+      <section
+        id="second-section"
+        class="second-section-projects"
+        aria-label="welcome to the section section of my projects"
+      >
         <a href="https://tugofwar.adamkovacs.co.uk/" target="blank">
           <article>
             <img src="./images/tugofwar.png" alt="" />
-            <div>
+            <div class="article-container">
               <h2>Tug of War: the game</h2>
               <h3>
                 Pull the rope by smashing the keyboard with your friend!
@@ -98,7 +112,7 @@
         <a href="https://hostilealiens.adamkovacs.co.uk/" target="_blank">
           <article>
             <img src="./images/hostileAliens.png" alt="" />
-            <div>
+            <div class="article-container">
               <h2>Hostile Aliens</h2>
               <h3>
                 A mindless random-shooter using JS Classes and Starship Troopers
@@ -114,7 +128,7 @@
         >
           <article>
             <img src="./images/adamkcv.png" alt="" />
-            <div>
+            <div class="article-container">
               <h2>My online CV</h2>
               <h3>
                 If you'd like to know more about me, check out my first ever
@@ -126,14 +140,25 @@
         </a>
       </section>
     </main>
-    <footer>
-      <a href="https://github.com/adamkovacsmano" target="_blank"
+    <footer
+      aria-label="thank you, for checking my website out, you can find some useful links below"
+      tabindex="0"
+    >
+      <a
+        href="https://github.com/adamkovacsmano"
+        target="_blank"
+        aria-label="a link to my GitHub"
         ><i class="fab fontawe fa-github-square"></i
       ></a>
-      <a href="https://www.linkedin.com/in/adam-kovacs-nology/" target="_blank"
+      <a
+        href="https://www.linkedin.com/in/adam-kovacs-nology/"
+        target="_blank"
+        aria-label="a link to my Linkedin"
         ><i class="fab fontawe fa-linkedin"></i
       ></a>
-      <a href="mailto:adamkovacs@gmail.com"
+      <a
+        href="mailto:adamkovacs@gmail.com"
+        aria-label="a link to my write me an email"
         ><i class="fas fontawe fa-envelope-square"></i
       ></a>
     </footer>
